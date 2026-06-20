@@ -40,6 +40,17 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Dokumentacja REST API - Swagger / OpenAPI.
+		     Po dodaniu zależności Swagger UI dostępny jest pod /swagger-ui.html,
+		     a surowy JSON specyfikacji OpenAPI pod /v3/api-docs.
+		     Wersja 2.7.0 jest kompatybilna ze Spring Boot 3.4+. Gdyby Maven nie
+		     mógł rozwiązać tej wersji dla Spring Boot 4 - podbij do 2.8.4. -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
